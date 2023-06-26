@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Estilo para el contenedor principal */
+  .container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #c9c9c9;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el encabezado */
+.container h1 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+}
+
+
+
+/* Estilo para los botones */
+button {
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: #7f9cf5;
+  color: #fff;
+}
+
+button.warn {
+  background-color: #fa828e;
+  color: #fff;
+}
+</style>
+<body>
+
+    <form class="form">
+      <p class="title">Registro</p>
+      <p class="message">Regístrese ahora y obtenga acceso completo a nuestra aplicación.</p>
+          <div class="flex">
+          <label>
+              <input required="" placeholder="" type="text" class="input">
+              <span>Nombres</span>
+          </label>
+
+          <label>
+              <input required="" placeholder="" type="text" class="input">
+              <span>Apellidos</span>
+          </label>
+      </div>
+
+      <label>
+          <input required="" placeholder="" type="email" class="input">
+          <span>Correo</span>
+      </label>
+
+      <label>
+          <input required="" placeholder="" type="password" class="input">
+          <span>Contraseña</span>
+      </label>
+      <label>
+          <input required="" placeholder="" type="password" class="input">
+          <span>Confirmar Contraseña</span>
+      </label>
+      <button class="submit" routerLink="/components/error" routerLinkActive="active-link">Crear</button>
+      <p class="signin">¿Ya tienes una cuenta? <a routerLink="/login" routerLinkActive="active-link">Iniciar sesion</a> </p>
+    </form>
+
+</body>
+</html>
